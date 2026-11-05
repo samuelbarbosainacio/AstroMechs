@@ -1,0 +1,38 @@
+html { scroll-behavior: smooth; }
+section { scroll-margin-top: 70px; }
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #501095, #041738);
+}
+.card { transition: transform 0.2s; }
+.card:hover { transform: translateY(-6px); }
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img { height: 280px; }
+}
+body {
+  font-family: 'Orbitron', sans-serif;
+}
+
+[data-bs-theme="light"] body {
+  background: linear-gradient(135deg, #e8e4ff, #cfdcff);
+  color: #212529;
+}
+
+[data-bs-theme="dark"] body {
+  background: linear-gradient(135deg, #070722, #041738);
+  color: #fff;
+}
+.modal-content {
+  background-color: #070722;
+  color: #fff;
+}
+.img-supernova {
+  object-position: center 35%;
+}
